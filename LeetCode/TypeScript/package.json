@@ -1,0 +1,18 @@
+{
+  "name": "leetcode-typescript-solutions",
+  "version": "1.0.0",
+  "description": "A collection of LeetCode problem solutions in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "typecheck": "npx --noEmit tsc",
+    "exec": "npx tsx"
+  },
+  "repository": "https://github.com/dmistomin/code-scratchpad.git",
+  "author": "Dmitriy Istomin",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "tsx": "^4.16.3",
+    "typescript": "^5.5.4"
+  }
+}
