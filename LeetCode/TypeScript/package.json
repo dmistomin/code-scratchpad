@@ -4,7 +4,7 @@
   "description": "A collection of LeetCode problem solutions in TypeScript",
   "main": "index.js",
   "scripts": {
-    "typecheck": "npx --noEmit tsc",
+    "typecheck": "npx tsc --noEmit",
     "exec": "npx tsx"
   },
   "repository": "https://github.com/dmistomin/code-scratchpad.git",
