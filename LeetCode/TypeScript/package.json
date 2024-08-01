@@ -4,15 +4,14 @@
   "description": "A collection of LeetCode problem solutions in TypeScript",
   "main": "index.js",
   "scripts": {
-    "typecheck": "npx tsc --noEmit",
-    "exec": "npx tsx"
+    "ex": "npx ts-node"
   },
   "repository": "https://github.com/dmistomin/code-scratchpad.git",
   "author": "Dmitriy Istomin",
   "license": "MIT",
   "private": true,
-  "devDependencies": {
-    "tsx": "^4.16.3",
-    "typescript": "^5.5.4"
+  "dependencies": {
+    "@types/node": "^22.0.2",
+    "ts-node": "^10.9.2"
   }
 }
