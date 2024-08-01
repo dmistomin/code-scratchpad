@@ -1,5 +1,5 @@
 function twoSum(nums: Array<number>, target: number): Array<number> {
-  const visited = {};
+  const visited: { [num: number]: number } = {};
 
   for (let i = 0; i < nums.length; i++) {
     const n = nums[i];
