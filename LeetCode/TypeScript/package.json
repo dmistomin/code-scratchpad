@@ -4,7 +4,8 @@
   "description": "A collection of LeetCode problem solutions in TypeScript",
   "main": "index.js",
   "scripts": {
-    "ex": "npx ts-node"
+    "ex": "npx ts-node",
+    "test": "npx ts-node tests/problems.ts"
   },
   "repository": "https://github.com/dmistomin/code-scratchpad.git",
   "author": "Dmitriy Istomin",
