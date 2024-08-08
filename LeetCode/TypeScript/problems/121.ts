@@ -21,7 +21,7 @@
   * Return max profit
 */
 
-function maxProfit(prices: number[]): number {
+export function maxProfit(prices: number[]): number {
   let minPrice = Infinity;
   let profit = 0;
 
@@ -33,6 +33,6 @@ function maxProfit(prices: number[]): number {
   return profit;
 }
 
-console.log('[7,1,5,3,6,4] -> 5: ', maxProfit([7, 1, 5, 3, 6, 4]));
-console.log('[7,1,5,3,6,4] -> 0: ', maxProfit([7, 6, 4, 3, 1]));
+// console.log('[7,1,5,3,6,4] -> 5: ', maxProfit([7, 1, 5, 3, 6, 4]));
+// console.log('[7,6,4,3,1] -> 0: ', maxProfit([7, 6, 4, 3, 1]));
 

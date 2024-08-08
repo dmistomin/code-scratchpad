@@ -24,7 +24,7 @@
  *
  */
 
-function isValid(s: string): boolean {
+export function isValid(s: string): boolean {
   const pairs: { [key: string]: string } = {
     '(': ')',
     '[': ']',
@@ -50,7 +50,7 @@ function isValid(s: string): boolean {
   return stack.length === 0;
 };
 
-console.log('isValid("()"): ', isValid('()'));
-console.log('isValid("()[]{}"): ', isValid('()[]{}'));
-console.log('isValid("(]"): ', isValid('(]'));
-console.log('isValid("]"): ', isValid(']'));
+// console.log('isValid("()"): ', isValid('()'));
+// console.log('isValid("()[]{}"): ', isValid('()[]{}'));
+// console.log('isValid("(]"): ', isValid('(]'));
+// console.log('isValid("]"): ', isValid(']'));
