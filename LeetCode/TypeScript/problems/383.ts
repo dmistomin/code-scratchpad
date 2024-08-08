@@ -20,7 +20,7 @@
  */
 
 
-function canConstruct(ransomNote: string, magazine: string) {
+export function canConstruct(ransomNote: string, magazine: string) {
   const zineFreq: { [letter: string]: number } = {};
   const noteFreq: { [letter: string]: number } = {};
 
@@ -43,7 +43,7 @@ function canConstruct(ransomNote: string, magazine: string) {
   return true;
 }
 
-console.log('ransomNote = "a", magazine = "b" -> false: ', canConstruct('a', 'b'));
-console.log('ransomNote = "aa", magazine = "ab" -> false: ', canConstruct('aa', 'ab'));
-console.log('ransomNote = "aa", magazine = "aab" -> true: ', canConstruct('aa', 'aab'));
+// console.log('ransomNote = "a", magazine = "b" -> false: ', canConstruct('a', 'b'));
+// console.log('ransomNote = "aa", magazine = "ab" -> false: ', canConstruct('aa', 'ab'));
+// console.log('ransomNote = "aa", magazine = "aab" -> true: ', canConstruct('aa', 'aab'));
 
