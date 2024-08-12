@@ -1,0 +1,10 @@
+{
+  "name": "infinite-pokemon-list",
+  "version": "1.0.0",
+  "description": "A React practice project: loads list of Pokemon from an API",
+  "main": "index.js",
+  "repository": "https://github.com/dmistomin/code-scratchpad",
+  "author": "Dmitriy Istomin",
+  "license": "MIT",
+  "private": true
+}
