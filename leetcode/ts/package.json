@@ -6,7 +6,7 @@
   "scripts": {
     "ex": "npx ts-node",
     "test-problems": "npx ts-node tests/problems.ts",
-    "test-data": "npx ts-node tests/dataStructures.ts"
+    "test-ds": "npx ts-node tests/dataStructures.ts"
   },
   "repository": "https://github.com/dmistomin/code-scratchpad.git",
   "author": "Dmitriy Istomin",
