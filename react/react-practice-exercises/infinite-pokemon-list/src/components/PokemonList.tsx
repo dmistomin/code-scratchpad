@@ -21,7 +21,7 @@ function PokemonList() {
     <>
       <div className='grid'>
         {pokemonList.map(p => (
-          <div className='grid-cell'>
+          <div key={p['name']} className='grid-cell'>
             <PokemonCard pokemon={p} />
           </div>
         ))}
