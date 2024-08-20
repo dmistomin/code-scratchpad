@@ -1,17 +1,14 @@
 import './PokemonCard.css'
 
-type PokemonData = {
-  name: string
-}
-
 interface PokemonCardProps {
-  pokemon: PokemonData
+  pokemon: PokemonDetail
 }
 
 function PokemonCard({ pokemon }: PokemonCardProps) {
   return (
     <div className="card">
       {pokemon.name}
+      <code>{JSON.stringify(pokemon)}</code>
     </div>
   )
 }
