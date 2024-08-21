@@ -6,6 +6,7 @@ import { isValid } from '../problems/20'
 import { maxProfit } from '../problems/121'
 import { canConstruct } from '../problems/383';
 import { search } from '../problems/704'
+import { TreeNode, isBalanced } from '../problems/110'
 
 console.log('Testing LeetCode Problems...');
 console.log('----------------------------');
@@ -34,6 +35,30 @@ test('20. Valid Parentheses', async (t) => {
   });
   await t.test('"]" -> false', (_t) => {
     assert.equal(isValid(']'), false);
+  });
+});
+
+test('110. Balanced Binary Tree', async (t) => {
+  await t.test('Right-heavy balanced tree', (_t) => {
+    const root = new TreeNode(3)
+    root.left = new TreeNode(9)
+    root.right = new TreeNode(20)
+    root.right.left = new TreeNode(15)
+    root.right.right = new TreeNode(7)
+    assert.equal(isBalanced(root), true);
+  });
+  await t.test('Left-heavy unbalanced tree', (_t) => {
+    const root = new TreeNode(1)
+    root.left = new TreeNode(2)
+    root.right = new TreeNode(2)
+    root.left.left = new TreeNode(3)
+    root.left.right = new TreeNode(3)
+    root.left.left.left = new TreeNode(4)
+    root.left.left.right = new TreeNode(4)
+    assert.equal(isBalanced(root), false);
+  });
+  await t.test('Null tree', (_t) => {
+    assert.equal(isBalanced(null), true);
   });
 });
 
